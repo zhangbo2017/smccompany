@@ -7,6 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:58:17 PM
+*/
 @Entity
 @Table(name = "ipodetails")
 public class IPODetailEntity extends AuditEntity {
