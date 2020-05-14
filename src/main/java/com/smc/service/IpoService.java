@@ -22,14 +22,7 @@ public class IpoService {
 	@Autowired
 	private IpoRepository repository;
 
-	/**
-	 * Description: query all exchange.
-	 *
-	 * @param:
-	 * @return: com.smc.utils.CommonResult
-	 * @auther: Liker
-	 * @date: 2019/12/04 10:39
-	 */
+
 	public CommonResult save(IPODetailEntity ipo) {
 		try {
 			repository.save(ipo);
@@ -40,14 +33,6 @@ public class IpoService {
 		}
 	}
 
-	/**
-	 * Description: update StockExchange detail
-	 *
-	 * @param:
-	 * @return: com.smc.utils.CommonResult
-	 * @auther: Liker
-	 * @date: 2019/12/04 10:39
-	 */
 	public CommonResult updateStockExchange(IPODetailEntity ipo) {
 		try {
 			IPODetailEntity oldIPO = repository.findById(ipo.getIpoid())
